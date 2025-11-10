@@ -1,5 +1,14 @@
+import { motion } from "framer-motion";
+
 export default function About() {
   return (
+    <motion.div
+      className="max-w-3xl mx-auto text-center"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
     <div className="max-w-3xl mx-auto text-center">
       <h3 className="text-3xl font-semibold mb-6">About Me</h3>
       <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -13,5 +22,6 @@ export default function About() {
         component-based UIs with Tailwind CSS and RESTful APIs.
       </p>
     </div>
+    </motion.div>
   );
 }

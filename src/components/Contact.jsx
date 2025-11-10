@@ -1,5 +1,14 @@
+import { motion } from "framer-motion";
+
 export default function Contact() {
   return (
+    <motion.div
+      className="max-w-3xl mx-auto text-center"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
     <div className="max-w-3xl mx-auto text-center">
       <h3 className="text-3xl font-semibold mb-6">Get In Touch</h3>
       <p className="text-gray-700 dark:text-gray-300 mb-6">
@@ -21,5 +30,6 @@ export default function Contact() {
         </a>
       </div>
     </div>
+    </motion.div>
   );
 }

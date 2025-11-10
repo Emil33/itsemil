@@ -1,5 +1,14 @@
+import { motion } from "framer-motion";
+
 export default function Projects() {
   return (
+    <motion.div
+      className="max-w-3xl mx-auto text-center"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
     <div className="max-w-5xl mx-auto text-center">
       <h3 className="text-3xl font-semibold mb-10">Highlighted Projects</h3>
 
@@ -46,5 +55,6 @@ export default function Projects() {
         </div>
       </div>
     </div>
+    </motion.div>
   );
 }

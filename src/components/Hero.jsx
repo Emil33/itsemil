@@ -1,5 +1,14 @@
+import { motion } from "framer-motion";
+
 export default function Hero() {
   return (
+    <motion.div
+      className="max-w-3xl mx-auto text-center"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
     <div className="flex flex-col items-center justify-center text-center min-h-screen">
       <h2 className="text-4xl sm:text-5xl font-bold mb-4">Hi, I’m Emil Julenyi 👋</h2>
       <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 max-w-xl">
@@ -13,5 +22,6 @@ export default function Hero() {
         View My Projects
       </a>
     </div>
+    </motion.div>
   );
 }

@@ -1,5 +1,14 @@
+import { motion } from "framer-motion";
+
 export default function Skills() {
   return (
+    <motion.div
+      className="max-w-3xl mx-auto text-center"
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    >
     <div className="max-w-4xl mx-auto text-center">
       <h3 className="text-3xl font-semibold mb-10">Technical Skills</h3>
 
@@ -24,5 +33,6 @@ export default function Skills() {
         VS Code • Git • Jira • SAP Web IDE • SAP BAS • Postman • Agile Development • CI/CD Workflows
       </p>
     </div>
+    </motion.div>
   );
 }
