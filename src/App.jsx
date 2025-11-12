@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 scroll-smooth">
+    <div className="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 scroll-smooth min-h-screen transition-colors duration-300">
       <Navbar />
 
       <main className="max-w-5xl mx-auto px-4">

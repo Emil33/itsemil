@@ -1,3 +1,5 @@
+import DarkModeToggle from "./DarkModeToggle";
+
 export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full bg-white dark:bg-gray-800 shadow-md z-50">
@@ -9,6 +11,7 @@ export default function Navbar() {
           <a href="#projects" className="hover:text-blue-600">Projects</a>
           <a href="#skills" className="hover:text-blue-600">Skills</a>
           <a href="#contact" className="hover:text-blue-600">Contact</a>
+          <DarkModeToggle />
         </div>
       </div>
     </nav>
