@@ -11,7 +11,7 @@ export default function ProjectCard({ project, index }) {
       className="group relative bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden border border-gray-200 dark:border-gray-700 hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300"
     >
       {/* Project Image */}
-      <div className="relative h-48 bg-gradient-to-br from-blue-500 to-purple-600 overflow-hidden">
+      <div className="relative h-36 sm:h-48 bg-gradient-to-br from-blue-500 to-purple-600 overflow-hidden">
         {project.image ? (
           <img
             src={project.image}

@@ -3,25 +3,23 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <motion.div
-      className="max-w-3xl mx-auto text-center"
+      className="max-w-3xl mx-auto text-center px-4"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-    <div className="max-w-3xl mx-auto text-center">
-      <h3 className="text-3xl font-semibold mb-6">About Me</h3>
+      <h3 className="text-2xl sm:text-3xl font-semibold mb-6">About Me</h3>
       <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-        I’m a front-end focused software engineer with over 5 years of experience developing modern, responsive,
+        I'm a front-end focused software engineer with over 5 years of experience developing modern, responsive,
         and high-performing web applications. I specialise in JavaScript, React, and SAPUI5, with a strong
         background in UI/UX and performance optimisation.
       </p>
       <p className="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">
         My journey began in SAP development — creating enterprise-grade solutions using ABAP, OData, and Fiori
-        Design Guidelines. Today, I’m expanding my expertise into React and TypeScript, building modern,
+        Design Guidelines. Today, I'm expanding my expertise into React and TypeScript, building modern,
         component-based UIs with Tailwind CSS and RESTful APIs.
       </p>
-    </div>
     </motion.div>
   );
 }
